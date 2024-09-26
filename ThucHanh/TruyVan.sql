@@ -1,4 +1,6 @@
-﻿--1. Cho biết danh sách các đối tác cung cấp hàng cho công ty.
+﻿USE QLBanHang
+
+--1. Cho biết danh sách các đối tác cung cấp hàng cho công ty.
 SELECT macongty, tencongty FROM NHACUNGCAP;
 
 --2. Mã hàng, tên hàng và số lượng hiện có trong công ty
@@ -61,3 +63,5 @@ WHERE YEAR(ngaydathang) < 2020;
 --11.Xóa khỏi bảng NHANVIEN những nhân viên đã làm việc cho công ty trên 40 năm
 DELETE FROM NHANVIEN
 WHERE DATEDIFF(YEAR, ngaylamviec, GETDATE()) > 40;
+
+S

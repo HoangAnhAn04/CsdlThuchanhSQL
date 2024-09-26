@@ -1,6 +1,6 @@
 ﻿-- Bài 1: Tạo cơ sở dữ liệu
 CREATE DATABASE THUCHANH;
-USE THUCHANH;
+USE QLBanHang;
 
 CREATE TABLE NHACUNGCAP(
   macongty NVARCHAR(10) PRIMARY KEY NOT NULL,
@@ -101,11 +101,24 @@ ADD
 
 -- Bài 5: Nhập giá trị cho bảng NHACUNGCAP, LOAIHANG, MATHANG, NHANVIEN, KHACHHANG, DONDATHANG, CHITIETDATHANG
 INSERT INTO NHANVIEN(manhanvien, ho, ten, ngaysinh, ngaylamviec, diachi, dienthoai, luongcoban, phucap)
-VALUES (1, 'Nguyen', 'Van A', '1990-12-1', '2010-12-1', 'Ha Noi', '0123456789', 1000000, 500000),
-	   (2, 'Tran', 'Van B', '1991-12-2', '2011-12-2', 'Ha Noi', '0123456788', 2000000, 600000),
+VALUES (1, N'An Hoàng', N'Anh', '1990-12-1', '2010-12-1', 'Ha Noi', '0123456789', 1000000, 500000),
+	   (2, N'Nguyễn Ngọc', N'Thiện', '1991-12-2', '2011-12-2', 'Ha Noi', '0123456788', 2000000, 600000),
 	   (3, 'Le', 'Van C', '1992-12-3', '2012-12-3', 'Ha Noi', '0123456787', 3000000, 700000),
 	   (4, 'Pham', 'Van D', '1993-12-4', '2013-12-4', 'Ha Noi', '0123456786', 4000000, 800000),
-	   (5, 'Hoang', 'Van E', '1994-12-5', '2014-12-5', 'Ha Noi', '0123456785', 5000000, 900000)
+	   (5, 'Hoang', 'Van E', '1994-12-5', '2014-12-5', 'Ha Noi', '0123456785', 5000000, 900000),
+	   (2, N'Nguyễn Ngọc', N'Thiện', '1991-12-2', '2011-12-2', 'Ha Noi', '0123456788', 2000000, 600000),
+	   (2, N'Nguyễn Ngọc', N'Thiện', '1991-12-2', '2011-12-2', 'Ha Noi', '0123456788', 2000000, 600000),
+	   (2, N'Nguyễn Ngọc', N'Thiện', '1991-12-2', '2011-12-2', 'Ha Noi', '0123456788', 2000000, 600000),
+	   (2, N'Nguyễn Ngọc', N'Thiện', '1991-12-2', '2011-12-2', 'Ha Noi', '0123456788', 2000000, 600000),
+	   (2, N'Nguyễn Ngọc', N'Thiện', '1991-12-2', '2011-12-2', 'Ha Noi', '0123456788', 2000000, 600000),
+	   (2, N'Nguyễn Ngọc', N'Thiện', '1991-12-2', '2011-12-2', 'Ha Noi', '0123456788', 2000000, 600000),
+	   (2, N'Nguyễn Ngọc', N'Thiện', '1991-12-2', '2011-12-2', 'Ha Noi', '0123456788', 2000000, 600000),
+	   (2, N'Nguyễn Ngọc', N'Thiện', '1991-12-2', '2011-12-2', 'Ha Noi', '0123456788', 2000000, 600000),
+	   (2, N'Nguyễn Ngọc', N'Thiện', '1991-12-2', '2011-12-2', 'Ha Noi', '0123456788', 2000000, 600000),
+	   (2, N'Nguyễn Ngọc', N'Thiện', '1991-12-2', '2011-12-2', 'Ha Noi', '0123456788', 2000000, 600000),
+	   (2, N'Nguyễn Ngọc', N'Thiện', '1991-12-2', '2011-12-2', 'Ha Noi', '0123456788', 2000000, 600000),
+	   (2, N'Nguyễn Ngọc', N'Thiện', '1991-12-2', '2011-12-2', 'Ha Noi', '0123456788', 2000000, 600000),
+
 
 INSERT INTO KHACHHANG(makhachhang, tencongty, tengiaodich, diachi, dienthoai, fax, email)
 VALUES (1, 'CT001', 'TGD001', 'Ha Noi', '0123456789', '0123456789', 'a@gmail.com'),
